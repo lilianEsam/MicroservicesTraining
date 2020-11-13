@@ -1,0 +1,16 @@
+server: 
+   port: 2000
+ 
+eureka: 
+  instance:   
+     prefer-ip-address: true 
+     
+spring: 
+   application:
+      name: service-a
+      
+      
+management:   
+   web:
+      exposure:
+         include: '*'
