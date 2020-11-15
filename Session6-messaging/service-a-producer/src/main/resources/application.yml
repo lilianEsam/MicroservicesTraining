@@ -1,0 +1,12 @@
+server:
+  port: 3030
+
+spring:
+  application:
+    name: hello-producer
+  cloud:
+    stream:
+      bindings:
+        hello-channel:
+          destination: hello-ch
+    defaultBinder: rabbit

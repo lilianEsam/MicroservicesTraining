@@ -1,0 +1,15 @@
+server:
+    port: 4040
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        hello-input-ch:
+          destination: hello-ch
+          group: hello-group
+    defaultBinder: rabbit
+  application:
+    name: hello-consumer
+
+
